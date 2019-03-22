@@ -17,7 +17,7 @@ VOLUME ["/tmp"]
 COPY start-master.sh /start-master.sh
 COPY start-worker.sh /start-worker.sh
 
-EXPOSE 8888 8080 7077 8998
+EXPOSE 4040 6066 8888 8080 7077 8998
 
 RUN pip3 install --upgrade pip setuptools && \
     pip3 install --upgrade jupyter findspark jupyterlab ipyparallel
