@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   spark-master:
-    image: whangun/spark:0.1
+    image: koreacb/spark:latest
 #    container_name: spark-master
     hostname: spark-master
     ports:
@@ -22,7 +22,7 @@ services:
     command: sh -c "/start-master.sh"
 
   spark-worker:
-    image: whangun/spark:0.1
+    image: koreacb/spark:latest
     depends_on:
       - spark-master
     ports:
