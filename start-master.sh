@@ -2,11 +2,21 @@
 
 jupyter lab --ip 0.0.0.0 --port 8888 --allow-root &
 
-ipcluster start &
+sleep 10
 
-pyspark &
+# ipcluster start &
+
+# pyspark &
+
+sleep 10
 
 /livy/livy-0.5.0-incubating-bin/bin/livy-server start &
+
+sleep 10
+
+/spark/bin/pyspark 
+
+sleep 10
 
 /spark/bin/spark-class org.apache.spark.deploy.master.Master \
     --port $SPARK_MASTER_PORT \

@@ -40,6 +40,7 @@ services:
 
 networks:
    spark-network:
+      attachable: true
 
 #   default:
 #       external:
